@@ -1,0 +1,54 @@
+{
+    "name": "CubeFire",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "c4385c4f-88cc-427e-9340-55040a54890f",
+            "actions": [
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "f058aec3-6ef6-49b5-b34e-28d9bfc9b8af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RefeatShoot",
+                    "type": "PassThrough",
+                    "id": "ebea1b45-d6f0-4fce-ad96-22d52b346b19",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2b93948c-2722-4e29-841b-f5903a47f292",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53cf5fac-af09-4726-9b46-c5b7e3716758",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RefeatShoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

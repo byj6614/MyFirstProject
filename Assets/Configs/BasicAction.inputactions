@@ -15,27 +15,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "Fire",
                     "type": "Button",
-                    "id": "a7e10535-3cf1-4f1c-95b7-35d4b47cd26f",
+                    "id": "1839e478-277a-47a5-8a54-80361d2b57d5",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RotateQ",
-                    "type": "Button",
-                    "id": "0e98320a-6056-414f-a6f2-3961e7428ef9",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "RotateE",
-                    "type": "Button",
-                    "id": "4a02bcab-95b6-43aa-a420-9947bdc45887",
+                    "name": "RepeatFire",
+                    "type": "PassThrough",
+                    "id": "44b132ef-217f-4122-b8e8-6ae79862d530",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -155,34 +146,23 @@
                 },
                 {
                     "name": "",
-                    "id": "4f6c5a81-930c-4190-a97e-28583353c56b",
+                    "id": "56859ab0-ca3d-4922-8bee-0fa43c6207ba",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "e5a86f95-611b-466a-b86f-9f4579226bd3",
-                    "path": "<Keyboard>/q",
+                    "id": "87132122-f24a-476d-adb4-c1c64c3f57d3",
+                    "path": "<Keyboard>/leftCtrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RotateQ",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d2c269d8-caa6-49c7-86d2-6b7b0df46ebb",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RotateE",
+                    "action": "RepeatFire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
