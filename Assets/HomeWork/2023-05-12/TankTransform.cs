@@ -14,7 +14,7 @@ public class TankTransform : MonoBehaviour
     [SerializeField] private float rotateSpeed;
     [Header("Shooter")]
     //총알의 발사위치를 지정하고 총알의 생성을 위한것
-    [SerializeField] private Bullet bulletPrefab;
+    [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletPoint;
     [SerializeField] private float bulletTime;
 
