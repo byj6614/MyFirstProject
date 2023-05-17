@@ -9,6 +9,7 @@ public class TankTransform : MonoBehaviour
 {
     private Vector3 TankDir;
     private Vector3 rotateDir;
+    private Animator animator;
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotateSpeed;
@@ -18,6 +19,10 @@ public class TankTransform : MonoBehaviour
     [SerializeField] private Transform bulletPoint;
     [SerializeField] private float bulletTime;
 
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         Move();
@@ -41,10 +46,15 @@ public class TankTransform : MonoBehaviour
         TankDir.z = Value.Get<Vector2>().y;
     }
 
+    public void Fire()
+    {
+        Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
+        animator.SetTrigger("Fire");
+    }
     private Coroutine bulletRoutine;
     private void OnFire()
     {
-        Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
+        Fire();
     }
 
     IEnumerator BulletMakeRoutine()
