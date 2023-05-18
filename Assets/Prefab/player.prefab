@@ -363,6 +363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94f0090be7962f4fb13d71e6aa4b200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnFired:
+    m_PersistentCalls:
+      m_Calls: []
   moveSpeed: 3
   rotateSpeed: 90
   bulletPrefab: {fileID: 0}

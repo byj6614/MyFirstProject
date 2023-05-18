@@ -24,9 +24,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RepeatFire",
+                    "name": "Zoomin",
                     "type": "PassThrough",
-                    "id": "44b132ef-217f-4122-b8e8-6ae79862d530",
+                    "id": "c78ac084-4eed-40ab-99c0-be1aadd5632e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -157,12 +157,12 @@
                 },
                 {
                     "name": "",
-                    "id": "87132122-f24a-476d-adb4-c1c64c3f57d3",
-                    "path": "<Keyboard>/leftCtrl",
+                    "id": "5e6c4fd4-b642-4d99-bf0f-413c50332dc9",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RepeatFire",
+                    "action": "Zoomin",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

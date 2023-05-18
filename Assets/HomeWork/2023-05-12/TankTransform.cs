@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class TankTransform : MonoBehaviour
 {
+    
     private Vector3 TankDir;
-    private Vector3 rotateDir;
+    
     private Animator animator;
+
+    public UnityEvent OnFired;
 
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotateSpeed;
@@ -50,6 +54,9 @@ public class TankTransform : MonoBehaviour
     {
         Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
         animator.SetTrigger("Fire");
+
+        GameManager.Data.AddShootCount(1);
+        OnFired?.Invoke();
     }
     private Coroutine bulletRoutine;
     private void OnFire()
